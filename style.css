@@ -1,0 +1,100 @@
+ /* Global box model */
+* {
+  box-sizing: border-box;
+}
+
+ 
+body {
+  background-image: url(./abstract-paperwork-background-vector-17714474.avif);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Calculator container */
+.table {
+  background: linear-gradient(145deg, #222222, #555555);  
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-collapse: collapse;  
+    
+  border-radius: 16px;
+  overflow: hidden;
+  table-layout: fixed;
+  width: 320px;
+}
+
+/* Buttons */
+.table td {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  color: #fff;
+  background-color: #3b3b3b;
+  transition: background-color 0.2s, transform 0.1s;
+  user-select: none;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Button hover  */
+.table td:hover {
+  background-color: #5fd68a; 
+  transform: scale(1.05);
+}
+
+ 
+#screen {
+  height: 60px;
+  width: 100%;
+  font-size: 24px;
+  text-align: right;
+  padding: 15px;
+  background: #fafafa;
+  color: #222;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-bottom: 2px solid #ccc;
+}
+
+/* AC Button */
+#ac-btn {
+  background-color: #ff4d4d;
+  color: white;
+  font-weight: bold;
+}
+
+#ac-btn:hover {
+  background-color: #ff8080;
+  color: #222;
+}
+
+/* Equals Button */
+.equal-btn {
+  background-color: #ffaa00;
+  color: black;
+  font-weight: bold;
+}
+
+.equal-btn:hover {
+  background-color: #ffd966;
+}
+
+/* Operator buttons  */
+.operator {
+  background-color: #8c52ff; 
+  color: white;
+}
+
+.operator:hover {
+  background-color: #a278f5;
+}
